@@ -45,7 +45,7 @@
     <!-- 接收 SDK 消息广播权限， 第三方 APP 接入时，请将 com.netease.nim.demo 替换为自己的包名 -->
     <uses-permission android:name="com.example.findyourlove.permission.RECEIVE_MSG"/>
     <application
-        android:name=".initialize"
+        android:name=".InitializeImSDK"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -103,18 +103,18 @@
             android:authorities="com.netease.nim.demo.ipc.provider"
             android:exported="false"
             android:process=":core" />
-        <activity android:name=".loginactivity">
+        <activity android:name=".Loginactivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".zSignUp"></activity>
-        <activity android:name=".message"></activity>
-        <activity android:name=".Main"></activity>
-        <activity android:name=".zMainActivity"/>
-        <activity android:name=".person_info"/>
+        <activity android:name=".SignUp"></activity>
+        <activity android:name=".Message"></activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MapActivity"/>
+        <activity android:name=".Person_info"/>
         <service android:name="com.amap.api.location.APSService"></service>
     </application>
 

@@ -27,7 +27,7 @@
     @显示个人信息页面
     <fragment
         android:id="@+id/navigation_person_info"
-        android:name="com.example.findyourlove.person_info_test"
+        android:name="com.example.findyourlove.Person_info_test"
         android:label="@string/title_person_info"
         tools:layout="@layout/activity_person_info" >
         <action
@@ -38,7 +38,7 @@
     @编辑个人信息界面
     <fragment
         android:id="@+id/navigation_person_info_edit"
-        android:name="com.example.findyourlove.person_info_edit"
+        android:name="com.example.findyourlove.Person_info_edit"
         android:label="@string/title_person_info"
         tools:layout="@layout/activity_person_info" >
         <action

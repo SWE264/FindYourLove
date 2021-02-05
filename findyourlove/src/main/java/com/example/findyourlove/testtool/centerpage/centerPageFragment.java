@@ -14,8 +14,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.findyourlove.R;
-import com.example.findyourlove.loginactivity;
-import com.example.findyourlove.zMainActivity;
+import com.example.findyourlove.MapActivity;
 
 public class centerPageFragment extends Fragment {
 
@@ -30,7 +29,7 @@ public class centerPageFragment extends Fragment {
         peopleAroundYou.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), zMainActivity.class);
+                Intent intent = new Intent(getActivity(), MapActivity.class);
                 startActivity(intent);
             }
         });

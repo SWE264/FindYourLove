@@ -3,9 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Findyourlove.iml" filepath="$PROJECT_DIR$/Findyourlove.iml" group="Findyourlove" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Findyourlove/app" />
       <module fileurl="file://$PROJECT_DIR$/findyourlove/findyourlove.iml" filepath="$PROJECT_DIR$/findyourlove/findyourlove.iml" group="Findyourlove/findyourlove" />
-      <module fileurl="file://$PROJECT_DIR$/match/match.iml" filepath="$PROJECT_DIR$/match/match.iml" group="Findyourlove/match" />
       <module fileurl="file://$PROJECT_DIR$/uikit/uikit.iml" filepath="$PROJECT_DIR$/uikit/uikit.iml" group="Findyourlove/uikit" />
     </modules>
   </component>

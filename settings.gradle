@@ -1,2 +1,2 @@
-include ':app', ':findyourlove', ':match', ':uikit'
+include ':findyourlove', ':uikit'
 rootProject.name='Findyourlove'
