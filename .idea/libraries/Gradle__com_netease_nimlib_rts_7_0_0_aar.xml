@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.netease.nimlib:rts:7.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0d5f03c739fc6db2c2084c4497d66dfe/rts-7.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0d5f03c739fc6db2c2084c4497d66dfe/rts-7.0.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.netease.nimlib/rts/7.0.0/23f1af05db92eb0bfc39ce92a587575e6c170a49/rts-7.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.netease.nimlib/rts/7.0.0/7cc12e93c384713a86f4c320340d5dd6ddf4052e/rts-7.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

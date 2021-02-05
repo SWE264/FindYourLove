@@ -1,0 +1,456 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.netease.nim.uikit.test" >
+4
+5    <uses-sdk
+5-->C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2851822036281871984.xml:5:5-73
+6        android:minSdkVersion="17"
+6-->C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2851822036281871984.xml:5:15-41
+7        android:targetSdkVersion="2" />
+7-->C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2851822036281871984.xml:5:42-70
+8
+9    <instrumentation
+9-->C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2851822036281871984.xml:11:5-15:76
+10        android:name="android.test.InstrumentationTestRunner"
+10-->C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2851822036281871984.xml:11:22-75
+11        android:functionalTest="false"
+11-->C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2851822036281871984.xml:14:22-52
+12        android:handleProfiling="false"
+12-->C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2851822036281871984.xml:13:22-53
+13        android:label="Tests for com.netease.nim.uikit.test"
+13-->C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2851822036281871984.xml:15:22-74
+14        android:targetPackage="com.netease.nim.uikit.test" />
+14-->C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2851822036281871984.xml:12:22-72
+15    <!-- for android -->
+16    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+17    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+18    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+19    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+20    <!-- for Samsung -->
+21    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+21-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\35caf961a8e240e16f90c84c6de72314\ShortcutBadger-1.1.22\AndroidManifest.xml:19:5-86
+21-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\35caf961a8e240e16f90c84c6de72314\ShortcutBadger-1.1.22\AndroidManifest.xml:19:22-83
+22    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+22-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\35caf961a8e240e16f90c84c6de72314\ShortcutBadger-1.1.22\AndroidManifest.xml:20:5-87
+22-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\35caf961a8e240e16f90c84c6de72314\ShortcutBadger-1.1.22\AndroidManifest.xml:20:22-84
+23    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+23-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\35caf961a8e240e16f90c84c6de72314\ShortcutBadger-1.1.22\AndroidManifest.xml:23:5-81
+23-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\35caf961a8e240e16f90c84c6de72314\ShortcutBadger-1.1.22\AndroidManifest.xml:23:22-78
+24    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+24-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\35caf961a8e240e16f90c84c6de72314\ShortcutBadger-1.1.22\AndroidManifest.xml:24:5-83
+24-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\35caf961a8e240e16f90c84c6de72314\ShortcutBadger-1.1.22\AndroidManifest.xml:24:22-80
+25    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+25-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\35caf961a8e240e16f90c84c6de72314\ShortcutBadger-1.1.22\AndroidManifest.xml:27:5-88
+25-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\35caf961a8e240e16f90c84c6de72314\ShortcutBadger-1.1.22\AndroidManifest.xml:27:22-85
+26    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+26-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\35caf961a8e240e16f90c84c6de72314\ShortcutBadger-1.1.22\AndroidManifest.xml:28:5-92
+26-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\35caf961a8e240e16f90c84c6de72314\ShortcutBadger-1.1.22\AndroidManifest.xml:28:22-89
+27    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+27-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\35caf961a8e240e16f90c84c6de72314\ShortcutBadger-1.1.22\AndroidManifest.xml:31:5-84
+27-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\35caf961a8e240e16f90c84c6de72314\ShortcutBadger-1.1.22\AndroidManifest.xml:31:22-81
+28    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+28-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\35caf961a8e240e16f90c84c6de72314\ShortcutBadger-1.1.22\AndroidManifest.xml:34:5-83
+28-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\35caf961a8e240e16f90c84c6de72314\ShortcutBadger-1.1.22\AndroidManifest.xml:34:22-80
+29    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+29-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\35caf961a8e240e16f90c84c6de72314\ShortcutBadger-1.1.22\AndroidManifest.xml:37:5-91
+29-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\35caf961a8e240e16f90c84c6de72314\ShortcutBadger-1.1.22\AndroidManifest.xml:37:22-88
+30    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+30-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\35caf961a8e240e16f90c84c6de72314\ShortcutBadger-1.1.22\AndroidManifest.xml:38:5-92
+30-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\35caf961a8e240e16f90c84c6de72314\ShortcutBadger-1.1.22\AndroidManifest.xml:38:22-89
+31    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+31-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\35caf961a8e240e16f90c84c6de72314\ShortcutBadger-1.1.22\AndroidManifest.xml:39:5-93
+31-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\35caf961a8e240e16f90c84c6de72314\ShortcutBadger-1.1.22\AndroidManifest.xml:39:22-90
+32    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
+32-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\35caf961a8e240e16f90c84c6de72314\ShortcutBadger-1.1.22\AndroidManifest.xml:42:5-73
+32-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\35caf961a8e240e16f90c84c6de72314\ShortcutBadger-1.1.22\AndroidManifest.xml:42:22-70
+33    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+33-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\35caf961a8e240e16f90c84c6de72314\ShortcutBadger-1.1.22\AndroidManifest.xml:45:5-82
+33-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\35caf961a8e240e16f90c84c6de72314\ShortcutBadger-1.1.22\AndroidManifest.xml:45:22-79
+34    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
+34-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\35caf961a8e240e16f90c84c6de72314\ShortcutBadger-1.1.22\AndroidManifest.xml:46:5-83
+34-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\35caf961a8e240e16f90c84c6de72314\ShortcutBadger-1.1.22\AndroidManifest.xml:46:22-80
+35    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+35-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\35caf961a8e240e16f90c84c6de72314\ShortcutBadger-1.1.22\AndroidManifest.xml:49:5-88
+35-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\35caf961a8e240e16f90c84c6de72314\ShortcutBadger-1.1.22\AndroidManifest.xml:49:22-85
+36    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" /> <!-- 网络相关 -->
+36-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\35caf961a8e240e16f90c84c6de72314\ShortcutBadger-1.1.22\AndroidManifest.xml:50:5-89
+36-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\35caf961a8e240e16f90c84c6de72314\ShortcutBadger-1.1.22\AndroidManifest.xml:50:22-86
+37    <uses-permission android:name="android.permission.INTERNET" />
+37-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:14:5-67
+37-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:14:22-64
+38    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+38-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:15:5-79
+38-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:15:22-76
+39    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+39-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:16:5-76
+39-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:16:22-73
+40    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+40-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:17:5-76
+40-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:17:22-73
+41    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS" /> <!-- 手机状态 -->
+41-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:18:5-80
+41-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:18:22-77
+42    <uses-permission android:name="android.permission.GET_TASKS" /> <!-- 读写文件 -->
+42-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:21:5-68
+42-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:21:22-65
+43    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+43-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:24:5-80
+43-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:24:22-77
+44    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+44-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:25:5-81
+44-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:25:22-78
+45
+46    <application
+46-->C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2851822036281871984.xml:7:5-9:19
+47        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+47-->[androidx.core:core:1.0.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\ec609e8cee787e2dff3592c66b08a66a\core-1.0.0\AndroidManifest.xml:22:18-86
+48        android:debuggable="true" >
+48-->C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2851822036281871984.xml:7:18-43
+49        <uses-library android:name="android.test.runner" />
+49-->C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2851822036281871984.xml:8:9-60
+49-->C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2851822036281871984.xml:8:23-57
+50
+51        <activity android:name="com.netease.nim.uikit.business.session.activity.WatchMultiRetweetPictureActivity" />
+51-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-117
+51-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:19-114
+52
+53        <meta-data
+53-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:9-16:43
+54            android:name="com.netease.nim.uikit.support.glide.NIMGlideModule"
+54-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-78
+55            android:value="GlideModule" /> <!-- 会话窗口 -->
+55-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-40
+56        <!--
+57             UI组件中包含了语音选文字功能，该界面是全屏显示，为了视觉上的美观，该界面主题ActionBar使用Overlay模式。
+58             如果开发者不需要该功能或效果，使用普通主题即可。 同时，还需要将message_activity.xml这个layout中的根节点的paddingTop去掉。
+59        -->
+60        <activity
+60-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:9-28:70
+61            android:name="com.netease.nim.uikit.business.session.activity.P2PMessageActivity"
+61-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:13-94
+62            android:configChanges="keyboardHidden|orientation"
+62-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:13-63
+63            android:screenOrientation="portrait"
+63-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-49
+64            android:theme="@style/AppTheme.NoActionBar"
+64-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:13-56
+65            android:windowSoftInputMode="stateHidden|adjustResize" />
+65-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:28:13-67
+66        <activity
+66-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:29:9-34:70
+67            android:name="com.netease.nim.uikit.business.session.activity.TeamMessageActivity"
+67-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:13-95
+68            android:configChanges="keyboardHidden|orientation"
+68-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:31:13-63
+69            android:screenOrientation="portrait"
+69-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:32:13-49
+70            android:theme="@style/AppTheme.NoActionBar"
+70-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:33:13-56
+71            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- 群聊 -->
+71-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:34:13-67
+72        <activity
+72-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:35:9-40:70
+73            android:name="com.netease.nim.uikit.business.team.activity.NormalTeamInfoActivity"
+73-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:36:13-95
+74            android:configChanges="keyboardHidden|orientation"
+74-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:37:13-63
+75            android:screenOrientation="portrait"
+75-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:38:13-49
+76            android:theme="@style/AppTheme.NoActionBar"
+76-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:39:13-56
+77            android:windowSoftInputMode="stateHidden|adjustResize" />
+77-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:40:13-67
+78        <activity
+78-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:41:9-46:70
+79            android:name="com.netease.nim.uikit.business.team.activity.AdvancedTeamInfoActivity"
+79-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:42:13-97
+80            android:configChanges="keyboardHidden|orientation"
+80-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:43:13-63
+81            android:screenOrientation="portrait"
+81-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:44:13-49
+82            android:theme="@style/AppTheme.NoActionBar"
+82-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:45:13-56
+83            android:windowSoftInputMode="stateHidden|adjustResize" />
+83-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:46:13-67
+84        <activity
+84-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:47:9-52:70
+85            android:name="com.netease.nim.uikit.business.team.activity.AdvancedTeamMemberActivity"
+85-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:48:13-99
+86            android:configChanges="keyboardHidden|orientation"
+86-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:49:13-63
+87            android:screenOrientation="portrait"
+87-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:50:13-49
+88            android:theme="@style/AppTheme.NoActionBar"
+88-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:51:13-56
+89            android:windowSoftInputMode="stateHidden|adjustResize" />
+89-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:52:13-67
+90        <activity
+90-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:53:9-58:70
+91            android:name="com.netease.nim.uikit.business.team.activity.AdvancedTeamAnnounceActivity"
+91-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:54:13-101
+92            android:configChanges="keyboardHidden|orientation"
+92-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:55:13-63
+93            android:screenOrientation="portrait"
+93-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:56:13-49
+94            android:theme="@style/AppTheme.NoActionBar"
+94-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:57:13-56
+95            android:windowSoftInputMode="stateHidden|adjustResize" />
+95-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:58:13-67
+96        <activity
+96-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:59:9-64:70
+97            android:name="com.netease.nim.uikit.business.team.activity.AdvancedTeamMemberInfoActivity"
+97-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:60:13-103
+98            android:configChanges="keyboardHidden|orientation"
+98-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:61:13-63
+99            android:screenOrientation="portrait"
+99-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:62:13-49
+100            android:theme="@style/AppTheme.NoActionBar"
+100-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:63:13-56
+101            android:windowSoftInputMode="stateHidden|adjustResize" />
+101-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:64:13-67
+102        <activity
+102-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:65:9-70:70
+103            android:name="com.netease.nim.uikit.business.team.activity.AdvancedTeamNicknameActivity"
+103-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:66:13-101
+104            android:configChanges="keyboardHidden|orientation"
+104-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:67:13-63
+105            android:screenOrientation="portrait"
+105-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:68:13-49
+106            android:theme="@style/AppTheme.NoActionBar"
+106-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:69:13-56
+107            android:windowSoftInputMode="stateHidden|adjustResize" />
+107-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:70:13-67
+108        <activity
+108-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:71:9-76:70
+109            android:name="com.netease.nim.uikit.business.team.activity.AdvancedTeamCreateAnnounceActivity"
+109-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:72:13-107
+110            android:configChanges="keyboardHidden|orientation"
+110-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:73:13-63
+111            android:screenOrientation="portrait"
+111-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:74:13-49
+112            android:theme="@style/AppTheme.NoActionBar"
+112-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:75:13-56
+113            android:windowSoftInputMode="stateHidden|adjustResize" />
+113-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:76:13-67
+114        <activity
+114-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:77:9-82:70
+115            android:name="com.netease.nim.uikit.business.team.activity.TeamPropertySettingActivity"
+115-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:78:13-100
+116            android:configChanges="keyboardHidden|orientation"
+116-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:79:13-63
+117            android:screenOrientation="portrait"
+117-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:80:13-49
+118            android:theme="@style/AppTheme.NoActionBar"
+118-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:81:13-56
+119            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- 联系人选择器 -->
+119-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:82:13-67
+120        <activity
+120-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:83:9-89:67
+121            android:name="com.netease.nim.uikit.business.contact.selector.activity.ContactSelectActivity"
+121-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:84:13-106
+122            android:configChanges="keyboardHidden|orientation"
+122-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:85:13-63
+123            android:label="@string/contact_selector"
+123-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:86:13-53
+124            android:screenOrientation="portrait"
+124-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:87:13-49
+125            android:theme="@style/AppTheme.NoActionBar"
+125-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:88:13-56
+126            android:windowSoftInputMode="stateHidden|adjustPan" /> <!-- @ 选择器 -->
+126-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:89:13-64
+127        <activity
+127-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:90:9-93:59
+128            android:name="com.netease.nim.uikit.business.ait.selector.AitContactSelectorActivity"
+128-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:91:13-98
+129            android:screenOrientation="portrait"
+129-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:92:13-49
+130            android:theme="@style/AppTheme.NoActionBar" /> <!-- 视频 -->
+130-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:93:13-56
+131        <activity
+131-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:94:9-99:70
+132            android:name="com.netease.nim.uikit.business.session.activity.CaptureVideoActivity"
+132-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:95:13-96
+133            android:configChanges="keyboardHidden|orientation"
+133-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:96:13-63
+134            android:screenOrientation="portrait"
+134-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:97:13-49
+135            android:theme="@style/AppTheme.NoActionBar"
+135-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:98:13-56
+136            android:windowSoftInputMode="stateHidden|adjustResize" />
+136-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:99:13-67
+137        <activity
+137-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:100:9-104:48
+138            android:name="com.netease.nim.uikit.business.session.activity.WatchVideoActivity"
+138-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:101:13-94
+139            android:configChanges="keyboardHidden|orientation|screenSize"
+139-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:102:13-74
+140            android:label="@string/video_play"
+140-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:103:13-47
+141            android:theme="@style/DarkTheme" /> <!-- 查看大图 -->
+141-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:104:13-45
+142        <activity
+142-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:107:9-110:48
+143            android:name="com.netease.nim.uikit.business.session.activity.WatchMessagePictureActivity"
+143-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:108:13-103
+144            android:configChanges="keyboardHidden"
+144-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:109:13-51
+145            android:theme="@style/DarkTheme" />
+145-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:110:13-45
+146        <activity
+146-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:111:9-114:48
+147            android:name="com.netease.nim.uikit.business.session.activity.WatchPicAndVideoMenuActivity"
+147-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:112:13-104
+148            android:configChanges="keyboardHidden"
+148-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:113:13-51
+149            android:theme="@style/DarkTheme" /> <!-- 照片选择 -->
+149-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:114:13-45
+150        <activity
+150-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:116:9-118:54
+151            android:name="com.netease.nim.uikit.business.session.activity.MsgSelectActivity"
+151-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:117:13-93
+152            android:configChanges="keyboardHidden" />
+152-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:118:13-51
+153
+154        <provider
+154-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:120:9-128:20
+155            android:name="com.netease.nim.uikit.common.media.model.GenericFileProvider"
+155-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:121:13-88
+156            android:authorities="com.netease.nim.uikit.test.generic.file.provider"
+156-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:122:13-73
+157            android:exported="false"
+157-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:123:13-37
+158            android:grantUriPermissions="true" >
+158-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:124:13-47
+159            <meta-data
+159-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:125:13-127:58
+160                android:name="android.support.FILE_PROVIDER_PATHS"
+160-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:126:17-67
+161                android:resource="@xml/provider_paths" />
+161-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:127:17-55
+162        </provider>
+163
+164        <activity
+164-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:130:9-134:53
+165            android:name="com.netease.nim.uikit.common.media.imagepicker.ui.ImageGridActivity"
+165-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:131:13-95
+166            android:configChanges="orientation|screenSize"
+166-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:132:13-59
+167            android:screenOrientation="portrait"
+167-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:133:13-49
+168            android:theme="@style/LightBaseTheme" />
+168-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:134:13-50
+169        <activity
+169-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:135:9-140:70
+170            android:name="com.netease.nim.uikit.common.media.imagepicker.ui.ImageCropActivity"
+170-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:136:13-95
+171            android:configChanges="orientation|screenSize"
+171-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:137:13-59
+172            android:hardwareAccelerated="false"
+172-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:138:13-48
+173            android:screenOrientation="portrait"
+173-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:139:13-49
+174            android:theme="@style/ImagePickerTheme.BlackStatusBar" />
+174-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:140:13-67
+175        <activity
+175-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:141:9-144:70
+176            android:name="com.netease.nim.uikit.common.media.imagepicker.ui.ImagePreviewActivity"
+176-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:142:13-98
+177            android:configChanges="orientation|screenSize"
+177-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:143:13-59
+178            android:theme="@style/ImagePickerTheme.BlackStatusBar" />
+178-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:144:13-67
+179        <activity
+179-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:145:9-148:70
+180            android:name="com.netease.nim.uikit.common.media.imagepicker.ui.ImagePreviewRetakeActivity"
+180-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:146:13-104
+181            android:configChanges="orientation|screenSize"
+181-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:147:13-59
+182            android:theme="@style/ImagePickerTheme.BlackStatusBar" />
+182-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:148:13-67
+183        <activity
+183-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:149:9-153:70
+184            android:name="com.netease.nim.uikit.common.media.imagepicker.ui.ImageTakeActivity"
+184-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:150:13-95
+185            android:configChanges="orientation|screenSize"
+185-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:151:13-59
+186            android:screenOrientation="portrait"
+186-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:152:13-49
+187            android:theme="@style/ImagePickerTheme.BlackStatusBar" />
+187-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:153:13-67
+188        <activity
+188-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:154:9-158:49
+189            android:name="com.netease.nim.uikit.common.media.imagepicker.video.GLVideoActivity"
+189-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:155:13-96
+190            android:configChanges="orientation|screenSize"
+190-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:156:13-59
+191            android:screenOrientation="portrait"
+191-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:157:13-49
+192            android:theme="@style/VideoTheme" />
+192-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:158:13-46
+193        <activity
+193-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:159:9-163:49
+194            android:name="com.netease.nim.uikit.common.media.imagepicker.video.GLVideoConfirmActivity"
+194-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:160:13-103
+195            android:configChanges="orientation|screenSize"
+195-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:161:13-59
+196            android:screenOrientation="portrait"
+196-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:162:13-49
+197            android:theme="@style/VideoTheme" />
+197-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:163:13-46
+198        <activity
+198-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:164:9-167:72
+199            android:name="com.netease.nim.uikit.common.media.imagepicker.camera.CaptureActivity"
+199-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:165:13-97
+200            android:screenOrientation="portrait"
+200-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:166:13-49
+201            android:theme="@style/Theme.AppCompat.Light.NoActionBar" /> <!-- 声明云信后台服务 -->
+201-->[__tested_artifact__::uikit] C:\Users\devil\AndroidStudioProjects\Findyourlove\uikit\build\intermediates\library_manifest\debug\AndroidManifest.xml:167:13-69
+202        <service
+202-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:30:9-32:39
+203            android:name="com.netease.nimlib.service.NimService"
+203-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:31:13-65
+204            android:process=":core" /> <!-- 运行后台辅助服务 -->
+204-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:32:13-36
+205        <service
+205-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:35:9-37:39
+206            android:name="com.netease.nimlib.service.NimService$Aux"
+206-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:36:13-69
+207            android:process=":core" /> <!-- 声明云信后台辅助服务 -->
+207-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:37:13-36
+208        <service
+208-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:40:9-44:39
+209            android:name="com.netease.nimlib.job.NIMJobService"
+209-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:41:13-64
+210            android:exported="true"
+210-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:42:13-36
+211            android:permission="android.permission.BIND_JOB_SERVICE"
+211-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:43:13-69
+212            android:process=":core" /> <!-- 云信SDK的监视系统启动和网络变化的广播接收器，用户开机自启动以及网络变化时候重新登录 -->
+212-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:44:13-36
+213        <receiver
+213-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:47:9-55:20
+214            android:name="com.netease.nimlib.service.NimReceiver"
+214-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:48:13-66
+215            android:exported="false"
+215-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:49:13-37
+216            android:process=":core" >
+216-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:50:13-36
+217            <intent-filter>
+217-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:51:13-54:29
+218                <action android:name="android.intent.action.BOOT_COMPLETED" />
+218-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:52:17-79
+218-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:52:25-76
+219                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+219-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:53:17-79
+219-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:53:25-76
+220            </intent-filter>
+221        </receiver> <!-- 云信进程间通信receiver -->
+222        <receiver android:name="com.netease.nimlib.service.ResponseReceiver" /> <!-- 云信进程间通信service -->
+222-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:58:9-80
+222-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:58:19-77
+223        <service android:name="com.netease.nimlib.service.ResponseService" />
+223-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:61:9-78
+223-->[com.netease.nimlib:basesdk:7.5.0] C:\Users\devil\.gradle\caches\transforms-2\files-2.1\5668fe986e5a4dee4c81a880b7c0e76c\basesdk-7.5.0\AndroidManifest.xml:61:18-75
+224    </application>
+225
+226</manifest>
