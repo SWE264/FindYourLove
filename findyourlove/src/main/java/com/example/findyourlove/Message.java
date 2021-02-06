@@ -1,97 +1,30 @@
 package com.example.findyourlove;
 
-import android.app.Activity;
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
+import java.util.Date;
 
-import androidx.annotation.Nullable;
+public class Message {
+    public String content;
+    public int type;// 0: Send  1: Receive
+    public Date time;
 
-import com.netease.nimlib.sdk.NIMClient;
-import com.netease.nimlib.sdk.Observer;
-import com.netease.nimlib.sdk.RequestCallback;
-import com.netease.nimlib.sdk.auth.AuthService;
-import com.netease.nimlib.sdk.msg.MessageBuilder;
-import com.netease.nimlib.sdk.msg.MsgService;
-import com.netease.nimlib.sdk.msg.MsgServiceObserve;
-import com.netease.nimlib.sdk.msg.constant.SessionTypeEnum;
-import com.netease.nimlib.sdk.msg.model.IMMessage;
-
-import java.util.List;
-
-public class Message extends Activity {
-
-    @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_message);
-
-        Button logout=findViewById(R.id.logoutbutton);
-        NIMClient.getService(MsgServiceObserve.class)
-                .observeReceiveMessage(incomingMessageObserver, true);
-        logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                logout();
-            }
-        });
-        Button sendbutton=findViewById(R.id.sendbutton);
-        sendbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                sendmessage();
-            }
-        });
-
+    public Message(String content, int type) {
+        this.content = content;
+        this.type = type;
     }
 
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        NIMClient.getService(MsgServiceObserve.class)
-                .observeReceiveMessage(incomingMessageObserver, false);
+    public String getContent() {
+        return content;
     }
-    Observer<List<IMMessage>> incomingMessageObserver =
-            new Observer<List<IMMessage>>() {
-                @Override
-                public void onEvent(List<IMMessage> messages) {
-                    TextView messageview=findViewById(R.id.messageview);
-                    // 处理新收到的消息，为了上传处理方便，SDK 保证参数 messages 全部来自同一个聊天对象。
-                    for(IMMessage message:messages){
-                        messageview.setText(message.getContent());
-                    }
-                }
-            };
 
-    private void logout(){
-        NIMClient.getService(AuthService.class).logout();
-        startActivity(new Intent(Message.this, Loginactivity.class));
-        finish();
+    public void setContent(String content) {
+        this.content = content;
     }
-    private void sendmessage(){
 
-        EditText messagetext=findViewById(R.id.messagetext);
-        IMMessage textMessage = MessageBuilder.createTextMessage("test", SessionTypeEnum.P2P, messagetext.getText().toString());
-        NIMClient.getService(MsgService.class).sendMessage(textMessage, false).setCallback(new RequestCallback<Void>() {
-            @Override
-            public void onSuccess(Void param) {
-                Toast.makeText(getApplicationContext(), "success", Toast.LENGTH_SHORT).show();
-            }
+    public int getType() {
+        return type;
+    }
 
-            @Override
-            public void onFailed(int code) {
-                Toast.makeText(getApplicationContext(), "fail", Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onException(Throwable exception) {
-
-            }
-        });
+    public void setType(int type) {
+        this.type = type;
     }
 }

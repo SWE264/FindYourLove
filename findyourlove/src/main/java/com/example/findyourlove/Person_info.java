@@ -88,13 +88,13 @@ public class Person_info extends AppCompatActivity {
     });
 
 
-/*    public void chat(View view){
-        Bundle bundle=new Bundle();
-        bundle.putInt("accid",id);
-        Intent intent=new Intent(this,message.class);
-        startActivity(intent,bundle);
-
-        NimUIKit.startP2PSession(getApplicationContext(),Integer.toString(id));
-    }*/
+//    public void chat(View view){
+//        Bundle bundle=new Bundle();
+//        bundle.putInt("accid",id);
+//        Intent intent=new Intent(this,Message.class);
+//        startActivity(intent,bundle);
+//
+//        NimUIKit.startP2PSession(getApplicationContext(),Integer.toString(id));
+//    }
 
 }

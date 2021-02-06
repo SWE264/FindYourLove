@@ -17,7 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 class ChatWindows extends Activity {
-static ArrayList<zMessage> zMessages;
+static ArrayList<Message> Messages;
     RecyclerView showChat;
     ChatAdapter chatAdapter;
     @Override
@@ -26,9 +26,9 @@ static ArrayList<zMessage> zMessages;
         setContentView(R.layout.zactivity_chat_windows);
 
         //DEMO DATA GEN
-        zMessages =new ArrayList<>();
-        zMessages.add(new zMessage("one message",0));
-        zMessages.add(new zMessage("two message",1));
+        Messages =new ArrayList<>();
+        Messages.add(new Message("one message",0));
+        Messages.add(new Message("two message",1));
         //DELETE!!!
 
         Bundle bundle=this.getIntent().getExtras();
@@ -46,10 +46,10 @@ showUser.setText(userName);
     public void send(View view){
         EditText message=findViewById(R.id.editText);
 
-        zMessage sendZMessage =new zMessage(message.getText().toString(),0);
-        zMessages.add(sendZMessage);
-        chatAdapter.notifyItemInserted(zMessages.size()-1);
-        showChat.scrollToPosition(zMessages.size()-1);
+        Message sendMessage =new Message(message.getText().toString(),0);
+        Messages.add(sendMessage);
+        chatAdapter.notifyItemInserted(Messages.size()-1);
+        showChat.scrollToPosition(Messages.size()-1);
         System.out.println("send");
         //THIS IS DISPLAY PART. SENDING HAS NOT BEEN DONE
 
@@ -76,21 +76,21 @@ class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ItemViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ItemViewHolder holder, int position) {
-        int type=ChatWindows.zMessages.get(position).getType();
+        int type=ChatWindows.Messages.get(position).getType();
 
 if(type==0){
-    holder.rightMessage.setText(ChatWindows.zMessages.get(position).getContent());
+    holder.rightMessage.setText(ChatWindows.Messages.get(position).getContent());
     holder.rightMessage.setVisibility(View.VISIBLE);
 }
 else {
-    holder.leftMessage.setText(ChatWindows.zMessages.get(position).getContent());
+    holder.leftMessage.setText(ChatWindows.Messages.get(position).getContent());
     holder.leftMessage.setVisibility(View.VISIBLE);
 }
     }
 
     @Override
     public int getItemCount() {
-        return ChatWindows.zMessages.size();
+        return ChatWindows.Messages.size();
     }
 
     class ItemViewHolder extends RecyclerView.ViewHolder {

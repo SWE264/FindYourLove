@@ -35,10 +35,6 @@ android {
         doNotStrip '*/mips/*.so'
         doNotStrip '*/mips64/*.so'
     }
-    buildTypes {
-        packagingOptions {
-        }
-    }
 }
 
 dependencies {

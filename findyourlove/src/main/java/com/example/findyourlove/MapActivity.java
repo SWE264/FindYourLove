@@ -49,7 +49,7 @@ public  class MapActivity extends Activity implements AMapLocationListener {
     static boolean onetime=true;
     Geopoint currentPoint=null;
     private AMapLocation currentLocation;
-    static  List<zTemporaryData> Demodata=new ArrayList<zTemporaryData>();
+    static  List<TemporaryData> Demodata=new ArrayList<TemporaryData>();
     HomeAdapter homeAdapter=null;
     ArrayList<Geopoint> pointlist=new ArrayList<>();
     @Override
@@ -164,7 +164,7 @@ homeAdapter=new HomeAdapter(this);
     @Override
     public void onLocationChanged(AMapLocation amapLocation) {
 
-        System.out.println("location"+accid);
+        System.out.println("location "+accid);
         System.out.println("hhhhhhhhhhhhhhhhh");
         if (amapLocation != null) {
             if (amapLocation.getErrorCode() == 0) {
@@ -219,7 +219,7 @@ homeAdapter=new HomeAdapter(this);
                                     String[] userInfo= ConnectDatabase.getUser(accid);
                                //     double distance=Math.sqrt(Math.pow(currentPoint.getPosition().getLatitude()-latitude,2)+Math.pow(currentPoint.getPosition().getLongitude()-longitude,2));
                                  double  distance=GetDistance(currentPoint.getPosition().getLatitude(),currentPoint.getPosition().getLongitude(),latitude,longitude);
-                                    zTemporaryData newUser=new zTemporaryData(distance,userInfo[0],userInfo[1],latitude,longitude,accid);
+                                    TemporaryData newUser=new TemporaryData(distance,userInfo[0],userInfo[1],latitude,longitude,accid);
                                     Demodata.add(newUser);
                                     homeAdapter.notifyItemInserted(Demodata.size()-1);
                                  //  HomeAdapter.scrollToPosition(Demodata.size()-1);

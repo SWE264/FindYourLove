@@ -111,7 +111,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".SignUp"></activity>
-        <activity android:name=".Message"></activity>
+        <activity android:name=".MessageActivity"></activity>
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".MapActivity"/>
         <activity android:name=".Person_info"/>

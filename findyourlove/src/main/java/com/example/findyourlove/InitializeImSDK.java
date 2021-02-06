@@ -13,18 +13,18 @@ public class InitializeImSDK extends Application {
 
 
     public void onCreate() {
-
+        super.onCreate();
         NIMClient.init(this, loginInfo(), options());
-    if(NIMUtil.isMainProcess(this)) {
-        NimUIKit.init(this);
-    }
+        if (NIMUtil.isMainProcess(this)) {
+            NimUIKit.init(this);
+        }
     }
     private SDKOptions options() {
         SDKOptions options = new SDKOptions();
 
         // 如果将新消息通知提醒托管给 SDK 完成，需要添加以下配置。否则无需设置。
         StatusBarNotificationConfig config = new StatusBarNotificationConfig();
-        config.notificationEntrance = Message.class; // 点击通知栏跳转到该Activity
+        config.notificationEntrance = MessageActivity.class; // 点击通知栏跳转到该Activity
         config.notificationSmallIconId = R.drawable.ic_launcher_background;
 
 

@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.example.findyourlove.testtool.centerpage.centerPageFragment"
+        android:name="com.example.findyourlove.NavigationBar.centerpage.centerPageFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
 
