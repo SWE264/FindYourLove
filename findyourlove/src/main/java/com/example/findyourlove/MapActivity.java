@@ -49,7 +49,7 @@ public  class MapActivity extends Activity implements AMapLocationListener {
     static boolean onetime=true;
     Geopoint currentPoint=null;
     private AMapLocation currentLocation;
-    static  List<TemporaryData> Demodata=new ArrayList<TemporaryData>();
+    static  List<UserObject> Demodata=new ArrayList<UserObject>();
     HomeAdapter homeAdapter=null;
     ArrayList<Geopoint> pointlist=new ArrayList<>();
     @Override
@@ -219,7 +219,7 @@ homeAdapter=new HomeAdapter(this);
                                     String[] userInfo= ConnectDatabase.getUser(accid);
                                //     double distance=Math.sqrt(Math.pow(currentPoint.getPosition().getLatitude()-latitude,2)+Math.pow(currentPoint.getPosition().getLongitude()-longitude,2));
                                  double  distance=GetDistance(currentPoint.getPosition().getLatitude(),currentPoint.getPosition().getLongitude(),latitude,longitude);
-                                    TemporaryData newUser=new TemporaryData(distance,userInfo[0],userInfo[1],latitude,longitude,accid);
+                                    UserObject newUser=new UserObject(distance,userInfo[0],userInfo[1],latitude,longitude,accid);
                                     Demodata.add(newUser);
                                     homeAdapter.notifyItemInserted(Demodata.size()-1);
                                  //  HomeAdapter.scrollToPosition(Demodata.size()-1);
@@ -310,14 +310,12 @@ class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ItemViewHolder>{
         holder.distance.setText("Distance: "+Double.toString(MapActivity.Demodata.get(position).getDistance())+" km");
         holder.name.setText("Name: "+ MapActivity.Demodata.get(position).getUserName());
         holder.button.setOnClickListener(a->{
-            Intent intent = new Intent(mContext, Person_info.class);
+            Intent intent = new Intent(mContext, PersonInfoActivity.class);
             Bundle bundle=new Bundle();
             bundle.putInt("accid", MapActivity.Demodata.get(position).accid);
             intent.putExtras(bundle);
             System.out.println("开始跳转");
             startActivity(mContext,intent,bundle);
-
-
         });
     }
 

@@ -114,7 +114,7 @@
         <activity android:name=".MessageActivity"></activity>
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".MapActivity"/>
-        <activity android:name=".Person_info"/>
+        <activity android:name=".PersonInfoActivity"/>
         <service android:name="com.amap.api.location.APSService"></service>
     </application>
 
