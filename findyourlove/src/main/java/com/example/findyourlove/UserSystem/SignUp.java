@@ -1,4 +1,4 @@
-package com.example.findyourlove;
+package com.example.findyourlove.UserSystem;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -8,6 +8,9 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
+
+import com.example.findyourlove.ConnectDatabase;
+import com.example.findyourlove.R;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;

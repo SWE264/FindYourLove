@@ -1,4 +1,4 @@
-package com.example.findyourlove;
+package com.example.findyourlove.Map;
 
 public class UserObject {
     double distance;

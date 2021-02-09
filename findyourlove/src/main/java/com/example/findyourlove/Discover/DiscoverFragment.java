@@ -1,4 +1,4 @@
-package com.example.findyourlove;
+package com.example.findyourlove.Discover;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +12,9 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
+
+import com.example.findyourlove.Map.MapActivity;
+import com.example.findyourlove.R;
 
 public class DiscoverFragment extends Fragment {
 

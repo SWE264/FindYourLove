@@ -1,4 +1,4 @@
-package com.example.findyourlove;
+package com.example.findyourlove.PersonalInfo;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,10 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import java.sql.SQLException;
 
+import com.example.findyourlove.ConnectDatabase;
+import com.example.findyourlove.UserSystem.Loginactivity;
+import com.example.findyourlove.MainActivity;
+import com.example.findyourlove.R;
 import com.netease.nim.uikit.api.NimUIKit;
 
 

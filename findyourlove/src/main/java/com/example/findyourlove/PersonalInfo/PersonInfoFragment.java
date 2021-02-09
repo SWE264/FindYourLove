@@ -1,4 +1,4 @@
-package com.example.findyourlove;
+package com.example.findyourlove.PersonalInfo;
 
 
 import android.os.Bundle;
@@ -11,6 +11,10 @@ import androidx.annotation.NonNull;
 import androidx.navigation.Navigation;
 import java.sql.SQLException;
 import androidx.fragment.app.Fragment;
+
+import com.example.findyourlove.ConnectDatabase;
+import com.example.findyourlove.UserSystem.Loginactivity;
+import com.example.findyourlove.R;
 
 public class PersonInfoFragment extends Fragment {
     private ItemGroup ig_id,ig_name,ig_gender,ig_region,ig_brithday;

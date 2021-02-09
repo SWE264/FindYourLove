@@ -1,4 +1,4 @@
-package com.example.findyourlove;
+package com.example.findyourlove.PersonalInfo;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -18,6 +18,9 @@ import com.bigkoo.pickerview.listener.OnOptionsSelectListener;
 import com.bigkoo.pickerview.listener.OnTimeSelectListener;
 import com.bigkoo.pickerview.view.OptionsPickerView;
 import com.bigkoo.pickerview.view.TimePickerView;
+import com.example.findyourlove.ConnectDatabase;
+import com.example.findyourlove.UserSystem.Loginactivity;
+import com.example.findyourlove.R;
 
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;

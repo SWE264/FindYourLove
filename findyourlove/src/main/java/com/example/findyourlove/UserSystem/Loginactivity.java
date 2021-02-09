@@ -1,4 +1,4 @@
-package com.example.findyourlove;
+package com.example.findyourlove.UserSystem;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -14,6 +14,10 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import static com.example.findyourlove.ConnectDatabase.firstUser;
 
+import com.example.findyourlove.ConnectDatabase;
+import com.example.findyourlove.MainActivity;
+import com.example.findyourlove.Map.MapActivity;
+import com.example.findyourlove.R;
 import com.netease.nim.uikit.impl.NimUIKitImpl;
 import com.netease.nimlib.sdk.NIMClient;
 import com.netease.nimlib.sdk.RequestCallback;

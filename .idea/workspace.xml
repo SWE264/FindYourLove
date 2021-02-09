@@ -20,29 +20,31 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/navEditor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/navEditor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/findyourlove/findyourlove.iml" beforeDir="false" afterPath="$PROJECT_DIR$/findyourlove/findyourlove.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/findyourlove/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/findyourlove/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/ConnectDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/ConnectDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/MapActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/MapActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/NavigationBar/centerpage/NotificationsViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/DiscoverViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/NavigationBar/centerpage/centerPageFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/DiscoverFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/NavigationBar/dashboard/DashboardFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/NavigationBar/dashboard/DashboardViewModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/NavigationBar/home/HomeFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/NavigationBar/home/HomeViewModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/NavigationBar/home2/HomeFragment2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/NavigationBar/home2/HomeFragment2ViewModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/Person_info.java" beforeDir="false" afterPath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/PersonInfoActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/Person_info_edit.java" beforeDir="false" afterPath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/PersonInfoEditFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/Person_info_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/PersonInfoFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/TemporaryData.java" beforeDir="false" afterPath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/UserObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/user_db.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/res/layout/activity_centerpage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/findyourlove/src/main/res/layout/activity_findpeople.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/res/menu/bottom_nav_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/findyourlove/src/main/res/menu/bottom_nav_menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/ChatWindows.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/DiscoverFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/Discover/DiscoverFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/DiscoverViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/Discover/DiscoverViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/FirstFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/ItemGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/PersonalInfo/ItemGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/Loginactivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/UserSystem/Loginactivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/MapActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/Map/MapActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/Message.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/MessageActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/MessageActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/PersonInfoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/PersonalInfo/PersonInfoActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/PersonInfoEditFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/PersonalInfo/PersonInfoEditFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/PersonInfoFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/PersonalInfo/PersonInfoFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/RoundImageView.java" beforeDir="false" afterPath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/PersonalInfo/RoundImageView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/UserSystem/SignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/TitleLayout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/UserObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/findyourlove/src/main/java/com/example/findyourlove/Map/UserObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/res/layout/activity_person_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/findyourlove/src/main/res/layout/activity_person_info.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/res/layout/activity_person_info_basic.xml" beforeDir="false" afterPath="$PROJECT_DIR$/findyourlove/src/main/res/layout/activity_person_info_basic.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/res/layout/zactivity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/findyourlove/src/main/res/layout/zactivity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/res/layout/zfragment_first.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/findyourlove/src/main/res/navigation/mobile_navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/findyourlove/src/main/res/navigation/mobile_navigation.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uikit/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/uikit/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uikit/uikit.iml" beforeDir="false" afterPath="$PROJECT_DIR$/uikit/uikit.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findyourlove/src/main/res/navigation/znav_graph.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +103,20 @@
     <option name="LAST_EDITED_BUILD_TYPE" value="packagingOptions" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\" />
+      <recent name="C:\Users\devil\AndroidStudioProjects\Findyourlove\findyourlove\src\main\java\com\example\findyourlove" />
+      <recent name="C:\Users\devil\AndroidStudioProjects\Findyourlove\findyourlove" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.findyourlove.UserSystem" />
+      <recent name="com.example.findyourlove.PersonalInfo" />
+      <recent name="com.example.findyourlove.Map" />
+      <recent name="com.example.findyourlove.Discover" />
+      <recent name="com.example.findyourlove" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.netease.nim.uikit.business.session.module" />
       <recent name="com.example.findyourlove" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -110,15 +125,6 @@
       <recent name="C:\Users\devil\AndroidStudioProjects\Findyourlove\findyourlove\src\main\res\menu" />
       <recent name="C:\Users\devil\AndroidStudioProjects\Findyourlove\findyourlove\src\main\res\navigation" />
       <recent name="C:\Users\devil\AndroidStudioProjects\Findyourlove\findyourlove\src\main\res\drawable-v24" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.netease.nim.uikit.business.session.module" />
-      <recent name="com.example.findyourlove" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\" />
-      <recent name="C:\Users\devil\AndroidStudioProjects\Findyourlove\findyourlove\src\main\java\com\example\findyourlove" />
-      <recent name="C:\Users\devil\AndroidStudioProjects\Findyourlove\findyourlove" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.findyourlove">
@@ -364,7 +370,7 @@
         <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY_CLASS" value="com.example.findyourlove.Loginactivity" />
+      <option name="ACTIVITY_CLASS" value="com.example.findyourlove.UserSystem.Loginactivity" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
@@ -469,14 +475,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="704" y="355" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612822726632" />
-    <state x="675" y="378" width="593" height="293" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1612904974986">
+    <state x="701" y="300" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1612912784640">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="675" y="378" width="593" height="293" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1612904974986" />
+    <state x="701" y="300" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612912784640" />
+    <state x="675" y="378" width="629" height="293" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1612912757830">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="675" y="378" width="629" height="293" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1612912757830" />
+    <state x="739" y="390" width="624" height="259" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1612912785409">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="739" y="390" width="624" height="259" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1920.1040@0.0.1920.1040" timestamp="1612912785409" />
     <state x="613" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1612905024415">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="613" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612905024415" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1612912323067">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612912323067" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1612844083776">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -517,14 +535,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1612585337773" />
+    <state x="789" y="302" key="chooseDestDirectoryDialog" timestamp="1612912753925">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="789" y="302" key="chooseDestDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612912753925" />
     <state x="100" y="100" width="1720" height="840" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1612585127084">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="100" y="100" width="1720" height="840" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612585127084" />
-    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1612909488691">
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1612912289967">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612909488691" />
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612912289967" />
     <state x="636" y="253" width="786" height="600" key="find.popup" timestamp="1612901556466">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -1,4 +1,4 @@
-package com.example.findyourlove;
+package com.example.findyourlove.Discover;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

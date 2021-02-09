@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/navigation_discover"
-        android:name="com.example.findyourlove.DiscoverFragment"
+        android:name="com.example.findyourlove.Discover.DiscoverFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
 
@@ -27,7 +27,7 @@
     @显示个人信息页面
     <fragment
         android:id="@+id/navigation_person_info"
-        android:name="com.example.findyourlove.PersonInfoFragment"
+        android:name="com.example.findyourlove.PersonalInfo.PersonInfoFragment"
         android:label="@string/title_person_info"
         tools:layout="@layout/activity_person_info" >
         <action
@@ -38,7 +38,7 @@
     @编辑个人信息界面
     <fragment
         android:id="@+id/navigation_person_info_edit"
-        android:name="com.example.findyourlove.PersonInfoEditFragment"
+        android:name="com.example.findyourlove.PersonalInfo.PersonInfoEditFragment"
         android:label="@string/title_person_info"
         tools:layout="@layout/activity_person_info" >
         <action

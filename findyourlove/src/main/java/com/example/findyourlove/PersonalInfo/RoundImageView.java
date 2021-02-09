@@ -1,4 +1,4 @@
-package com.example.findyourlove;
+package com.example.findyourlove.PersonalInfo;
 
 import android.content.Context;
 import android.graphics.Canvas;

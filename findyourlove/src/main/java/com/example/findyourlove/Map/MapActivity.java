@@ -1,4 +1,4 @@
-package com.example.findyourlove;
+package com.example.findyourlove.Map;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -21,6 +21,10 @@ import com.amap.api.location.AMapLocationClient;
 import com.amap.api.location.AMapLocationClientOption;
 import com.amap.api.location.AMapLocationListener;
 
+import com.example.findyourlove.ConnectDatabase;
+import com.example.findyourlove.UserSystem.Loginactivity;
+import com.example.findyourlove.PersonalInfo.PersonInfoActivity;
+import com.example.findyourlove.R;
 import com.microsoft.maps.Geopoint;
 import com.microsoft.maps.MapAnimationKind;
 import com.microsoft.maps.MapElementLayer;

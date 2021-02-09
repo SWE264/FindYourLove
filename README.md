@@ -18,3 +18,5 @@ UIkit:UIkit SDk from netease<br>
 - 优化头像功能
 - 优化pofile 页面
 - 优化服务器速度
+- map的线程handler，寻找速度存在问题
+- 登出按钮
