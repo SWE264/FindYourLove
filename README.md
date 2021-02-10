@@ -1,10 +1,6 @@
 # senior_project-
 findyourlove：senior project main project<br>
-findyourlove2：abandon file<br>
-match：match system（may be abadon)<br>
 UIkit:UIkit SDk from netease<br>
-张志鹏整合文件位置：java/zhangzhipeng<br>
-张志鹏layout整合文件:文件最前面都加z<br>
 
 # Some hints!
 - Apache HTTP Server cannot be used in Andriod Studio
@@ -18,5 +14,5 @@ UIkit:UIkit SDk from netease<br>
 - 优化头像功能
 - 优化pofile 页面
 - 优化服务器速度
-- map的线程handler，寻找速度存在问题
+- map的线程handler
 - 登出按钮
