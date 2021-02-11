@@ -18,6 +18,7 @@ import com.example.findyourlove.ConnectDatabase;
 import com.example.findyourlove.MainActivity;
 import com.example.findyourlove.Map.MapActivity;
 import com.example.findyourlove.R;
+import com.example.findyourlove.Util.MD5Util;
 import com.netease.nim.uikit.impl.NimUIKitImpl;
 import com.netease.nimlib.sdk.NIMClient;
 import com.netease.nimlib.sdk.RequestCallback;
@@ -70,6 +71,7 @@ public class Loginactivity extends Activity {
     public void doLogin() throws SQLException, ClassNotFoundException {
         EditText loginemail=findViewById(R.id.loginemail);
         EditText loginpsw= findViewById(R.id.loginpsw);
+        String strPsw = MD5Util.MD5EncodeUtf8(loginpsw.getText().toString());
         int SDK_INT = Build.VERSION.SDK_INT;
         if (SDK_INT > 8)
         {
@@ -79,9 +81,10 @@ public class Loginactivity extends Activity {
             //your codes here
             try {
                 if (conn==null) Connect();
-                String[] infomation=getAccid(null,loginemail.getText().toString().toLowerCase(),loginpsw.getText().toString());
+                String[] infomation=getAccid(null,loginemail.getText().toString().toLowerCase(),strPsw);
+                //String[] infomation=getAccid(null,loginemail.getText().toString().toLowerCase(),loginpsw.getText().toString());
                 accid=infomation[0];
-                LoginInfo info = new LoginInfo(infomation[0],infomation[1]); // config...
+                LoginInfo info = new LoginInfo(infomation[0],infomation[1]); // infomation[0] = accid ,infomation[1] = token
                 RequestCallback<LoginInfo> callback =
                         new RequestCallback<LoginInfo>() {
                             @Override

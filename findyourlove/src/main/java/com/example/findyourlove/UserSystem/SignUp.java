@@ -11,6 +11,7 @@ import androidx.annotation.Nullable;
 
 import com.example.findyourlove.ConnectDatabase;
 import com.example.findyourlove.R;
+import com.example.findyourlove.Util.MD5Util;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
@@ -36,14 +37,14 @@ public class SignUp extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.zactivity_signup);
-
-
     }
+
     public void signUp(View view){
         EditText email=findViewById(R.id.signinemail);
         EditText psd=findViewById(R.id.signinpsw);
         String stringEmail=email.getText().toString();
-        String stringPsd=psd.getText().toString();
+        //String stringPsd = psd.getText().toString();
+        String stringPsd=MD5Util.MD5EncodeUtf8(psd.getText().toString());
         int SDK_INT = android.os.Build.VERSION.SDK_INT;
         if (SDK_INT > 8)
         {
@@ -106,8 +107,8 @@ public class SignUp extends Activity {
 
         // 打印执行结果
         String responseString=EntityUtils.toString(response.getEntity());
-     //   System.out.println(EntityUtils.toString(response.getEntity(), "utf-8"));
-System.out.println(responseString);
+        //   System.out.println(EntityUtils.toString(response.getEntity(), "utf-8"));
+        System.out.println(responseString);
         JSONObject jo=new JSONObject(responseString);
         int result=jo.getInt("code");
         String token=null;
@@ -121,79 +122,73 @@ System.out.println(responseString);
         return token;
 
     }
+
     public void createUser( String email, String password) throws Exception {
         int accid=(int)(System.currentTimeMillis()%Math.pow(10,8));
 
         String name=email;
-String token=genToken(accid,name,email);
-if(token!=null){
-    System.out.println(token);
-    ConnectDatabase.addUser(accid,token,email,password);
-    ConnectDatabase.initialLocation(accid);
-}
-else{
-    System.out.println("token fail");
-}
-
-
-    }
-}
-
-class CheckSumBuilder {
-
-    public static String getCheckSum(String appSecret, String nonce, String curTime) {
-        return encode("sha1", appSecret + nonce + curTime);
-    }
-
-    private static String encode(String algorithm, String value) {
-        if (value == null) {
-            return null;
+        String token=genToken(accid,name,email);
+        if(token!=null){
+            System.out.println(token);
+            ConnectDatabase.addUser(accid,token,email,password);
+            ConnectDatabase.initialLocation(accid);
         }
-        try {
-            MessageDigest messageDigest = MessageDigest.getInstance(algorithm);
-            messageDigest.update(value.getBytes());
-            return getFormattedText(messageDigest.digest());
-        } catch (Exception e) {
-            throw new RuntimeException(e);
+        else{
+            System.out.println("token fail");
         }
     }
 
-    private static String getFormattedText(byte[] bytes) {
-        int len = bytes.length;
-        StringBuilder buf = new StringBuilder(len * 2);
-        for (int j = 0; j < len; j++) {
-            buf.append(HEX_DIGITS[(bytes[j] >> 4) & 0x0f]);
-            buf.append(HEX_DIGITS[bytes[j] & 0x0f]);
-        }
-        return buf.toString();
-    }
-
-
-    private static final char[] HEX_DIGITS = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f' };
-
 }
 
-class NonceBuilder{
-    public static String genNonce(int length){
-       long seed = System.currentTimeMillis()%100;
-        Random random=new Random(seed);
-        StringBuffer stringBuffer=new StringBuffer("");
-        for(int a=0;a<length;a++){
-           int i= random.nextInt(36);
-            if(i>=0&&i<10){
-                stringBuffer.append(i);
+    class CheckSumBuilder {
+
+        public static String getCheckSum(String appSecret, String nonce, String curTime) {
+            return encode("sha1", appSecret + nonce + curTime);
+        }
+
+        private static String encode(String algorithm, String value) {
+            if (value == null) {
+                return null;
             }
-            else{
-                i-=10;
-                stringBuffer.append((char)('a'+i));
+            try {
+                MessageDigest messageDigest = MessageDigest.getInstance(algorithm);
+                messageDigest.update(value.getBytes());
+                return getFormattedText(messageDigest.digest());
+            } catch (Exception e) {
+                throw new RuntimeException(e);
             }
         }
-        return stringBuffer.toString();
 
+        private static String getFormattedText(byte[] bytes) {
+            int len = bytes.length;
+            StringBuilder buf = new StringBuilder(len * 2);
+            for (int j = 0; j < len; j++) {
+                buf.append(HEX_DIGITS[(bytes[j] >> 4) & 0x0f]);
+                buf.append(HEX_DIGITS[bytes[j] & 0x0f]);
+            }
+            return buf.toString();
+        }
+
+
+        private static final char[] HEX_DIGITS = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f' };
 
     }
 
-
-
-
-}
+    class NonceBuilder{
+        public static String genNonce(int length){
+           long seed = System.currentTimeMillis()%100;
+            Random random=new Random(seed);
+            StringBuffer stringBuffer=new StringBuffer("");
+            for(int a=0;a<length;a++){
+               int i= random.nextInt(36);
+                if(i>=0&&i<10){
+                    stringBuffer.append(i);
+                }
+                else{
+                    i-=10;
+                    stringBuffer.append((char)('a'+i));
+                }
+            }
+            return stringBuffer.toString();
+        }
+    }
