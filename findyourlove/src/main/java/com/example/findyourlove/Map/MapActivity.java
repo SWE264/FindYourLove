@@ -204,7 +204,7 @@ homeAdapter=new HomeAdapter(this);
                         if(accid!=-1) {
 
                             try {
-                                System.out.println("Ready to upload");
+                                System.out.println("Ready to upload map activity");
                                 ConnectDatabase.uploadLocation(currentPoint, accid);
                             } catch (SQLException e) {
                                 e.printStackTrace();

@@ -61,7 +61,7 @@ public class PersonInfoActivity extends AppCompatActivity {
         ig_region.invisible();
         ig_brithday.invisible();
 
-        ig_id.getContentEdt().setText(String.valueOf(id) + "               ");
+        ig_id.getContentEdit().setText(String.valueOf(id) + "               ");
 
         //从数据读取数据
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
@@ -77,12 +77,12 @@ public class PersonInfoActivity extends AppCompatActivity {
         @Override
         public void run() {
             try {
-                System.out.println("Ready to upload");
+                System.out.println("Ready to upload activity");
                 //ig_name.setTConnectDatabase.getName2(id);
-                ig_name.getContentEdt().setText(ConnectDatabase.getName2(id));
-                ig_brithday.getContentEdt().setText(ConnectDatabase.getBirth2(id));
-                ig_gender.getContentEdt().setText(ConnectDatabase.getGender2(id));
-                ig_region.getContentEdt().setText(ConnectDatabase.getRegion2(id));
+                ig_name.getContentEdit().setText(ConnectDatabase.getName2(id));
+                ig_brithday.getContentEdit().setText(ConnectDatabase.getBirth2(id));
+                ig_gender.getContentEdit().setText(ConnectDatabase.getGender2(id));
+                ig_region.getContentEdit().setText(ConnectDatabase.getRegion2(id));
             } catch (SQLException e) {
                 e.printStackTrace();
             } catch (ClassNotFoundException e) {
@@ -92,13 +92,6 @@ public class PersonInfoActivity extends AppCompatActivity {
     });
 
 
-//    public void chat(View view){
-//        Bundle bundle=new Bundle();
-//        bundle.putInt("accid",id);
-//        Intent intent=new Intent(this,Message.class);
-//        startActivity(intent,bundle);
-//
-//        NimUIKit.startP2PSession(getApplicationContext(),Integer.toString(id));
-//    }
+
 
 }

@@ -7,8 +7,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
@@ -40,12 +42,12 @@ public class PersonInfoEditFragment extends Fragment {
     private TimePickerView pvTime;
 
 
-
     @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
+
         return inflater.inflate(R.layout.activity_person_info_basic, container, false);
     }
 
@@ -57,7 +59,13 @@ public class PersonInfoEditFragment extends Fragment {
         ig_gender = view.findViewById(R.id.ig_gender);
         ig_region = view.findViewById(R.id.ig_region);
         ig_brithday = view.findViewById(R.id.ig_brithday);
-
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
+        try{
+            Initial_Thread.run();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
         //使EditTextView可以编辑
         ig_name.editable();
         ig_region.editable();
@@ -78,9 +86,30 @@ public class PersonInfoEditFragment extends Fragment {
         tv_forward.setOnClickListener(this::onClick);
 
         //根据全局变量设置id
-        ig_id.getContentEdt().setText(String.valueOf(id) + "               ");
+        ig_id.getContentEdit().setText(String.valueOf(id) + "               ");
+
+        //从数据读取数据
 
     }
+
+    Thread Initial_Thread =new Thread(new Runnable() {
+        @Override
+        public void run() {
+            try {
+                System.out.println("Ready to upload ");
+                //ig_name.setTConnectDatabase.getName2(id);
+                ig_name.getContentEdit().setText(ConnectDatabase.getName2(id));
+
+                ig_brithday.getContentEdit().setText(ConnectDatabase.getBirth2(id));
+                ig_gender.getContentEdit().setText(ConnectDatabase.getGender2(id));
+                ig_region.getContentEdit().setText(ConnectDatabase.getRegion2(id));
+            } catch (SQLException e) {
+                e.printStackTrace();
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
+        }
+    });
 
     public void onClick(View v){
         switch (v.getId()){
@@ -103,7 +132,7 @@ public class PersonInfoEditFragment extends Fragment {
                     public void onTimeSelect(Date date,View v) {//选中事件回调
                        // tvTime.setText(getTime(date));
                         SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
-                        ig_brithday.getContentEdt().setText(sdf.format(date));
+                        ig_brithday.getContentEdit().setText(sdf.format(date));
                     }
                 }).build();
                 pvTime.show();
@@ -115,7 +144,7 @@ public class PersonInfoEditFragment extends Fragment {
                     @Override
                     public void onOptionsSelect(int options1, int option2, int options3 ,View v) {
                         String tx = optionsItems_gender.get(options1);
-                        ig_gender.getContentEdt().setText(tx);
+                        ig_gender.getContentEdit().setText(tx);
                     }
                 }).setCancelColor(Color.GRAY).build();
                 pvOptions.setPicker(optionsItems_gender);

@@ -7,6 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.navigation.Navigation;
 import java.sql.SQLException;
@@ -53,7 +55,7 @@ public class PersonInfoFragment extends Fragment {
         ig_brithday.setOnClickListener(this::onClick);
 
         //显示id 空格手动调整对齐
-        ig_id.getContentEdt().setText(String.valueOf(id) + "               ");
+        ig_id.getContentEdit().setText(String.valueOf(id) + "               ");
 
 
         //从数据读取数据
@@ -72,7 +74,8 @@ public class PersonInfoFragment extends Fragment {
         switch (v.getId()){
             //navigation跳转
             case R.id.edit_save:
-                System.out.println("person_info_test tv_forward 监听到了点击");
+                System.out.println("person_info_test tv_forward 监听到了点击 ");
+
                 Navigation.findNavController(v).navigate(R.id.action_navigation_person_info_to_navigation_person_info_edit);
                 break;
             default:
@@ -85,12 +88,12 @@ public class PersonInfoFragment extends Fragment {
         @Override
         public void run() {
                 try {
-                    System.out.println("Ready to upload");
+                    System.out.println("Ready to upload main page");
                     //ig_name.setTConnectDatabase.getName2(id);
-                    ig_name.getContentEdt().setText(ConnectDatabase.getName2(id));
-                    ig_brithday.getContentEdt().setText(ConnectDatabase.getBirth2(id));
-                    ig_gender.getContentEdt().setText(ConnectDatabase.getGender2(id));
-                    ig_region.getContentEdt().setText(ConnectDatabase.getRegion2(id));
+                    ig_name.getContentEdit().setText(ConnectDatabase.getName2(id));
+                    ig_brithday.getContentEdit().setText(ConnectDatabase.getBirth2(id));
+                    ig_gender.getContentEdit().setText(ConnectDatabase.getGender2(id));
+                    ig_region.getContentEdit().setText(ConnectDatabase.getRegion2(id));
                 } catch (SQLException e) {
                     e.printStackTrace();
                 } catch (ClassNotFoundException e) {

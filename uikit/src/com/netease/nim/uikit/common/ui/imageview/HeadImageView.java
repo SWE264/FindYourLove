@@ -35,6 +35,7 @@ public class HeadImageView extends CircleImageView {
                                                                                           R.dimen.avatar_notification_size);
 
     private static final int DEFAULT_AVATAR_RES_ID = R.drawable.nim_avatar_default;
+    //private static final int SECOND_DEFAULT_AVATAR_RES_ID = R.drawable.nim_avatar_second;
 
     public HeadImageView(Context context) {
         super(context);
@@ -73,7 +74,7 @@ public class HeadImageView extends CircleImageView {
      */
     public void loadBuddyAvatar(String account) {
         final UserInfo userInfo = NimUIKit.getUserInfoProvider().getUserInfo(account);
-        changeUrlBeforeLoad(null, userInfo != null ? userInfo.getAvatar() : null,
+        changeUrlBeforeLoad(null,"https://n.sinaimg.cn/sinacn10115/439/w641h598/20200214/4a9b-ipmxpvz8164848.jpg",
                             DEFAULT_AVATAR_RES_ID, DEFAULT_AVATAR_THUMB_SIZE);
     }
 
@@ -120,27 +121,9 @@ public class HeadImageView extends CircleImageView {
      */
     private void changeUrlBeforeLoad(String roomId, final String url, final int defaultResId,
                                      final int thumbSize) {
-        if (TextUtils.isEmpty(url)) {
-            // avoid useless call
-            loadImage(url, defaultResId, thumbSize);
-        } else {
-            /*
-             * 若使用网易云信云存储，这里可以设置下载图片的压缩尺寸，生成下载URL
-             * 如果图片来源是非网易云信云存储，请不要使用NosThumbImageUtil
-             */
-            NIMClient.getService(NosService.class).getOriginUrlFromShortUrl(url).setCallback(
-                    new RequestCallbackWrapper<String>() {
 
-                        @Override
-                        public void onResult(int code, String result, Throwable exception) {
-                            if (TextUtils.isEmpty(result)) {
-                                result = url;
-                            }
-                            final String thumbUrl = makeAvatarThumbNosUrl(result, thumbSize);
-                            loadImage(thumbUrl, defaultResId, thumbSize);
-                        }
-                    });
-        }
+            loadImage(url, defaultResId, thumbSize);
+
     }
 
     /**
