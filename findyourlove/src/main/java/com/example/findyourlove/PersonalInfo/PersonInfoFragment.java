@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.navigation.Navigation;
@@ -17,9 +16,11 @@ import androidx.fragment.app.Fragment;
 import com.example.findyourlove.ConnectDatabase;
 import com.example.findyourlove.UserSystem.Loginactivity;
 import com.example.findyourlove.R;
+import com.netease.nim.uikit.common.ui.imageview.HeadImageView;
 
 public class PersonInfoFragment extends Fragment {
     private ItemGroup ig_id,ig_name,ig_gender,ig_region,ig_brithday;
+    HeadImageView ri_portrait;
     private int id = Integer.parseInt(Loginactivity.accid);
     private TextView tv_forward;
 
@@ -28,12 +29,12 @@ public class PersonInfoFragment extends Fragment {
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
-        return inflater.inflate(R.layout.activity_person_info_basic, container, false);
+        return inflater.inflate(R.layout.fragment_person_info_basic, container, false);
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
+        ri_portrait=view.findViewById(R.id.ri_portrait);
         ig_id = view.findViewById(R.id.ig_id);
         ig_name = view.findViewById(R.id.ig_name);
         ig_gender = view.findViewById(R.id.ig_gender);
@@ -46,7 +47,7 @@ public class PersonInfoFragment extends Fragment {
         ig_gender.invisible();
         ig_region.invisible();
         ig_brithday.invisible();
-
+        ri_portrait.loadBuddyAvatar(Loginactivity.accid);
 
         //设置监听
         //titleLayout.findViewById(R.id.tv_forward).setOnClickListener(this::onClick);

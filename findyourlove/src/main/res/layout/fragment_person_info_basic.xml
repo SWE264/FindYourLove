@@ -15,13 +15,23 @@
         android:paddingTop="30dp"
         android:paddingBottom="10dp">
 
-        <com.example.findyourlove.PersonalInfo.RoundImageView
+<!--        <com.example.findyourlove.PersonalInfo.RoundImageView-->
+<!--            android:id="@+id/ri_portrait"-->
+<!--            android:layout_width="60dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_marginLeft="@dimen/padding_left_and_right"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            android:src="@mipmap/default_header2"/>-->
+
+        <com.netease.nim.uikit.common.ui.imageview.HeadImageView
             android:id="@+id/ri_portrait"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginLeft="@dimen/padding_left_and_right"
             android:scaleType="centerCrop"
-            android:src="@mipmap/default_header2"/>
+            android:src="@mipmap/default_header2">
+
+        </com.netease.nim.uikit.common.ui.imageview.HeadImageView>
 
 
         <TextView

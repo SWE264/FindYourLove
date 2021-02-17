@@ -20,6 +20,12 @@ import com.netease.nimlib.sdk.superteam.SuperTeam;
 import com.netease.nimlib.sdk.team.model.Team;
 import com.netease.nimlib.sdk.uinfo.model.UserInfo;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 /**
  * Created by huangjun on 2015/11/13.
  */
@@ -48,6 +54,13 @@ public class HeadImageView extends CircleImageView {
     public HeadImageView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
     }
+    static Connection conn;
+
+    public static void Connect() throws ClassNotFoundException, SQLException {
+        Class.forName("com.mysql.jdbc.Driver");
+        System.out.println("connect to database");
+        conn = DriverManager.getConnection("jdbc:mysql://findyourlove.crdb40mgvgxt.us-west-2.rds.amazonaws.com:3306/dating","dating","877152223Zzp!");
+    }
 
     /**
      * 加载用户头像（默认大小的缩略图）
@@ -72,11 +85,66 @@ public class HeadImageView extends CircleImageView {
      *
      * @param account 用户账号
      */
+
+
     public void loadBuddyAvatar(String account) {
-        final UserInfo userInfo = NimUIKit.getUserInfoProvider().getUserInfo(account);
-        changeUrlBeforeLoad(null,"https://n.sinaimg.cn/sinacn10115/439/w641h598/20200214/4a9b-ipmxpvz8164848.jpg",
+        if(conn==null) {
+            try {
+                Connect();
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+
+        try {
+                final UserInfo userInfo = NimUIKit.getUserInfoProvider().getUserInfo(account);
+                if(userInfo==null){
+                    System.out.println("the invalid userinfo is "+userInfo);
+                    changeUrlBeforeLoad(null,userInfo != null ? userInfo.getAvatar() : null, DEFAULT_AVATAR_RES_ID,
+                            DEFAULT_AVATAR_THUMB_SIZE);
+                }
+                else{
+                    String accid=userInfo.getAccount();
+                    System.out.println("the valid userinfo is "+accid);
+                    PreparedStatement preparedStatement= null;
+                    preparedStatement = conn.prepareStatement("Select avatar from user where accid = ?");
+                    preparedStatement.setInt(1,Integer.parseInt(accid));
+                    ResultSet set=preparedStatement.executeQuery();
+                    int avatarId=1;
+                    System.out.println("the Avatar ID is "+avatarId);
+                    while(set.next()){
+                        avatarId=set.getInt(1);
+                        System.out.println(avatarId);
+                    }
+
+                    String url="";
+                    switch (avatarId){
+                        case 1: url="https://n.sinaimg.cn/sinacn10115/439/w641h598/20200214/4a9b-ipmxpvz8164848.jpg";
+                            break;
+                        case 2: url="https://i2.gqxz.com/uploads/202009/14/200914110924764.jpg";
+                            break;
+                        case 3: url="https://i2.gqxz.com/uploads/ueditor/image/20200401/1585731188170324.jpeg";
+                            break;
+                        case 4: url="https://img.cehca.com/uploadimg/image/20191218/20191218115754_28238.jpg";
+                            break;
+                        case 5: url="https://tupian.qqw21.com/article/UploadPic/2021-1/202111119311244785.jpg";
+                            break;
+
+                    }
+                    changeUrlBeforeLoad(null,url,
                             DEFAULT_AVATAR_RES_ID, DEFAULT_AVATAR_THUMB_SIZE);
-    }
+                }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+
+
+        }
+
+
 
     /**
      * 加载用户头像（默认大小的缩略图）
