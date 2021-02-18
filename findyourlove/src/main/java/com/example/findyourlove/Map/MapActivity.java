@@ -55,6 +55,7 @@ public  class MapActivity extends Activity implements AMapLocationListener {
     private AMapLocation currentLocation;
     static  List<UserObject> Demodata=new ArrayList<UserObject>();
     HomeAdapter homeAdapter=null;
+    Thread otherUser;
     ArrayList<Geopoint> pointlist=new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -143,6 +144,7 @@ homeAdapter=new HomeAdapter(this);
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        otherUser.interrupt();
         mMapView.onDestroy();
     }
 
@@ -198,7 +200,7 @@ homeAdapter=new HomeAdapter(this);
 
                     mPinLayer.getElements().add(pushpin);
                 }
-                Thread otherUser=new Thread(new Runnable() {
+                otherUser=new Thread(new Runnable() {
                     @Override
                     public void run() {
                         if(accid!=-1) {
