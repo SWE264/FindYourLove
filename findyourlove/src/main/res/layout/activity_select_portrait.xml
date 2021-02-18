@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonalInfo.SelectPortraitActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/blank_title"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:ellipsize="marquee"
+            android:gravity="center_horizontal|center"
+            android:singleLine="true"
+            android:text="Select one Portrait you like"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/GridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="100dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:rowCount="3"
+            android:columnCount="3"
+            android:orientation="vertical"
+            android:gravity="center">
+            <com.example.findyourlove.PersonalInfo.RoundImageView
+                android:id="@+id/portrait_1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="@dimen/padding_left_and_right"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/default_header2"/>
+
+            <com.example.findyourlove.PersonalInfo.RoundImageView
+                android:id="@+id/portrait_2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="@dimen/padding_left_and_right"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/default_header2"/>
+
+            <com.example.findyourlove.PersonalInfo.RoundImageView
+                android:id="@+id/portrait_3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="@dimen/padding_left_and_right"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/default_header2"/>
+
+            <com.example.findyourlove.PersonalInfo.RoundImageView
+                android:id="@+id/portrait_4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="@dimen/padding_left_and_right"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/default_header2"/>
+
+            <com.example.findyourlove.PersonalInfo.RoundImageView
+                android:id="@+id/portrait_5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="@dimen/padding_left_and_right"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/default_header2"/>
+
+            <com.example.findyourlove.PersonalInfo.RoundImageView
+                android:id="@+id/portrait_6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="@dimen/padding_left_and_right"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/default_header2"/>
+
+            <com.example.findyourlove.PersonalInfo.RoundImageView
+                android:id="@+id/portrait_7"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="@dimen/padding_left_and_right"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/default_header2"/>
+
+            <com.example.findyourlove.PersonalInfo.RoundImageView
+                android:id="@+id/portrait_8"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="@dimen/padding_left_and_right"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/default_header2"/>
+
+            <com.example.findyourlove.PersonalInfo.RoundImageView
+                android:id="@+id/portrait_9"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="@dimen/padding_left_and_right"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/default_header2"/>
+        </GridLayout>>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,7 @@
 package com.example.findyourlove.PersonalInfo;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.view.LayoutInflater;
@@ -42,6 +43,7 @@ public class PersonInfoFragment extends Fragment {
         ig_brithday = view.findViewById(R.id.ig_brithday);
         tv_forward = view.findViewById(R.id.edit_save);
 
+
         //使箭头不可见
         ig_name.invisible();
         ig_gender.invisible();
@@ -54,6 +56,7 @@ public class PersonInfoFragment extends Fragment {
         tv_forward.setOnClickListener(this::onClick);
         ig_name.setOnClickListener(this::onClick);
         ig_brithday.setOnClickListener(this::onClick);
+        ri_portrait.setOnClickListener(this::onClick);
 
         //显示id 空格手动调整对齐
         ig_id.getContentEdit().setText(String.valueOf(id) + "               ");
@@ -70,10 +73,19 @@ public class PersonInfoFragment extends Fragment {
 
     }
 
+//    public void  SelectPortrait(View v){
+//        Intent intent = new Intent(this.getContext(), SelectPortraitActivity.class);
+//        this.getContext().startActivity(intent);
+//    }
+
 
     public void onClick(View v){
         switch (v.getId()){
             //navigation跳转
+            case R.id.ri_portrait:
+                Intent intent = new Intent(this.getContext(), SelectPortraitActivity.class);
+                this.getContext().startActivity(intent);
+                break;
             case R.id.edit_save:
                 System.out.println("person_info_test tv_forward 监听到了点击 ");
 

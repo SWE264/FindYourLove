@@ -25,9 +25,11 @@
 
         <com.netease.nim.uikit.common.ui.imageview.HeadImageView
             android:id="@+id/ri_portrait"
+            android:clickable="true"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginLeft="@dimen/padding_left_and_right"
+
             android:scaleType="centerCrop"
             android:src="@mipmap/default_header2">
 

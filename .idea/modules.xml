@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Findyourlove.iml" filepath="$PROJECT_DIR$/Findyourlove.iml" group="Findyourlove" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/findyourlove/findyourlove.iml" filepath="$PROJECT_DIR$/.idea/modules/findyourlove/findyourlove.iml" group="Findyourlove/findyourlove" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/uikit/uikit.iml" filepath="$PROJECT_DIR$/.idea/modules/uikit/uikit.iml" group="Findyourlove/uikit" />
+      <module fileurl="file://$PROJECT_DIR$/Findyourlove.iml" filepath="$PROJECT_DIR$/Findyourlove.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/findyourlove/Findyourlove.findyourlove.iml" filepath="$PROJECT_DIR$/.idea/modules/findyourlove/Findyourlove.findyourlove.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/uikit/Findyourlove.uikit.iml" filepath="$PROJECT_DIR$/.idea/modules/uikit/Findyourlove.uikit.iml" />
     </modules>
   </component>
 </project>
