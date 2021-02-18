@@ -1,2 +1,6 @@
 local.properties
 .idea/
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+build/
