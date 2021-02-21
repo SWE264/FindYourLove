@@ -52,7 +52,8 @@
             android:value="26462577589cd3eedea15981b5ce9b2c" />
         <meta-data
             android:name="com.amap.api.v2.apikey"
-            android:value="d773ef884dd3a8eb5bb0d416afb3f63a" /> <!-- 云信后台服务，请使用独立进程。 -->
+            android:value="d773ef884dd3a8eb5bb0d416afb3f63a" />
+        <!-- 云信后台服务，请使用独立进程。 -->
         <service
             android:name="com.netease.nimlib.service.NimService"
             android:process=":core" /> <!-- 云信后台辅助服务 -->
