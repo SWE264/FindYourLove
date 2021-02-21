@@ -42,7 +42,7 @@ public class Loginactivity extends Activity {
     static Connection conn;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
-        //change account
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         try {
