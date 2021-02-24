@@ -153,6 +153,37 @@ public class HeadImageView extends CircleImageView {
 
 
         }
+    public void loadBuddyAvatar(int avatarID) {
+
+                String url="";
+                switch (avatarID){
+                    case 1: url="https://i.pinimg.com/564x/01/2a/9d/012a9d365def5d21c2fedfb2f23c9cd5.jpg";
+                        break;
+                    case 2: url="https://i.pinimg.com/originals/d2/47/f8/d247f893f64f27c01235620c795e4604.jpg";
+                        break;
+                    case 3: url="https://miro.medium.com/max/500/0*3t6VIRr0UmJ8h5Li.jpg";
+                        break;
+                    case 4: url="https://i.etsystatic.com/13041716/r/il/2b03c1/2318479940/il_570xN.2318479940_ks94.jpg";
+                        break;
+                    case 5: url="https://i.pinimg.com/564x/76/bf/67/76bf6775d942ddd03404adcd6e58fc9c.jpg";
+                        break;
+                    case 6: url="https://i.pinimg.com/originals/bd/6f/52/bd6f527fc25008d25d44afeaef4e269c.jpg";
+                        break;
+                    case 7: url="https://i.pinimg.com/originals/b9/f9/fd/b9f9fdbf18a82f20b7c8bdb56e30ad2b.jpg";
+                        break;
+                    case 8: url="https://i.pinimg.com/originals/18/7a/3a/187a3a1be0d040bad580c442d081e69f.jpg";
+                        break;
+                    case 9: url="https://i1.wp.com/papers.co/wallpaper/papers.co-ay03-ilya-kuvshinov-pink-girl-illustration-art-36-3840x2400-4k-wallpaper.jpg";
+                        break;
+                    case 10: url="https://i.pinimg.com/originals/7a/3b/6d/7a3b6daeddbfc50e52937754351e5ff3.jpg";
+                        break;
+
+                }
+                changeUrlBeforeLoad(null,url,
+                        DEFAULT_AVATAR_RES_ID, DEFAULT_AVATAR_THUMB_SIZE);
+            }
+
+
 
 
 

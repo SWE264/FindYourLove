@@ -36,7 +36,7 @@
             android:columnCount="3"
             android:orientation="vertical"
             android:gravity="center">
-            <com.example.findyourlove.PersonalInfo.RoundImageView
+            <com.netease.nim.uikit.common.ui.imageview.HeadImageView
                 android:id="@+id/portrait_1"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
@@ -44,7 +44,7 @@
                 android:scaleType="centerCrop"
                 android:src="@mipmap/default_header2"/>
 
-            <com.example.findyourlove.PersonalInfo.RoundImageView
+            <com.netease.nim.uikit.common.ui.imageview.HeadImageView
                 android:id="@+id/portrait_2"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
@@ -52,7 +52,7 @@
                 android:scaleType="centerCrop"
                 android:src="@mipmap/default_header2"/>
 
-            <com.example.findyourlove.PersonalInfo.RoundImageView
+            <com.netease.nim.uikit.common.ui.imageview.HeadImageView
                 android:id="@+id/portrait_3"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
@@ -60,7 +60,7 @@
                 android:scaleType="centerCrop"
                 android:src="@mipmap/default_header2"/>
 
-            <com.example.findyourlove.PersonalInfo.RoundImageView
+            <com.netease.nim.uikit.common.ui.imageview.HeadImageView
                 android:id="@+id/portrait_4"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
@@ -68,7 +68,7 @@
                 android:scaleType="centerCrop"
                 android:src="@mipmap/default_header2"/>
 
-            <com.example.findyourlove.PersonalInfo.RoundImageView
+            <com.netease.nim.uikit.common.ui.imageview.HeadImageView
                 android:id="@+id/portrait_5"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
@@ -76,7 +76,7 @@
                 android:scaleType="centerCrop"
                 android:src="@mipmap/default_header2"/>
 
-            <com.example.findyourlove.PersonalInfo.RoundImageView
+            <com.netease.nim.uikit.common.ui.imageview.HeadImageView
                 android:id="@+id/portrait_6"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
@@ -84,7 +84,7 @@
                 android:scaleType="centerCrop"
                 android:src="@mipmap/default_header2"/>
 
-            <com.example.findyourlove.PersonalInfo.RoundImageView
+            <com.netease.nim.uikit.common.ui.imageview.HeadImageView
                 android:id="@+id/portrait_7"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
@@ -92,7 +92,7 @@
                 android:scaleType="centerCrop"
                 android:src="@mipmap/default_header2"/>
 
-            <com.example.findyourlove.PersonalInfo.RoundImageView
+            <com.netease.nim.uikit.common.ui.imageview.HeadImageView
                 android:id="@+id/portrait_8"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
@@ -100,7 +100,7 @@
                 android:scaleType="centerCrop"
                 android:src="@mipmap/default_header2"/>
 
-            <com.example.findyourlove.PersonalInfo.RoundImageView
+            <com.netease.nim.uikit.common.ui.imageview.HeadImageView
                 android:id="@+id/portrait_9"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
