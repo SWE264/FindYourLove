@@ -21,7 +21,7 @@ import com.netease.nim.uikit.common.ui.imageview.HeadImageView;
 
 public class PersonInfoFragment extends Fragment {
     private ItemGroup ig_id,ig_name,ig_gender,ig_region,ig_brithday;
-    HeadImageView ri_portrait;
+    public HeadImageView ri_portrait;
     private int id = Integer.parseInt(Loginactivity.accid);
     private TextView tv_forward;
 

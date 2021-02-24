@@ -52,10 +52,11 @@ public class SelectPortraitActivity extends AppCompatActivity {
 
     public void onClick(View v){
 
-        Intent intent = new Intent(this, PersonInfoActivity.class);
+        Intent intent = new Intent(this, MainActivity.class);
         switch (v.getId()){
             //navigation跳转
             case R.id.portrait_1:
+                startActivity(intent);
                 finish();
                 break;
             case R.id.portrait_2:
