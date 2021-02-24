@@ -73,10 +73,6 @@ public class PersonInfoFragment extends Fragment {
 
     }
 
-//    public void  SelectPortrait(View v){
-//        Intent intent = new Intent(this.getContext(), SelectPortraitActivity.class);
-//        this.getContext().startActivity(intent);
-//    }
 
 
     public void onClick(View v){

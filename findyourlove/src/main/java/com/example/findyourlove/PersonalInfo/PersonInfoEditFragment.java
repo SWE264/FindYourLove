@@ -21,6 +21,7 @@ import com.bigkoo.pickerview.view.TimePickerView;
 import com.example.findyourlove.ConnectDatabase;
 import com.example.findyourlove.UserSystem.Loginactivity;
 import com.example.findyourlove.R;
+import com.netease.nim.uikit.common.ui.imageview.HeadImageView;
 
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
@@ -29,6 +30,7 @@ import java.util.Date;
 
 public class PersonInfoEditFragment extends Fragment {
     private ItemGroup ig_id,ig_name,ig_gender,ig_region,ig_brithday;
+    HeadImageView ri_portrait;
     private int id = Integer.parseInt(Loginactivity.accid);
     private TextView tv_forward;
 
@@ -51,12 +53,13 @@ public class PersonInfoEditFragment extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
+        ri_portrait=view.findViewById(R.id.ri_portrait);
         ig_id = view.findViewById(R.id.ig_id);
         ig_name = view.findViewById(R.id.ig_name);
         ig_gender = view.findViewById(R.id.ig_gender);
         ig_region = view.findViewById(R.id.ig_region);
         ig_brithday = view.findViewById(R.id.ig_brithday);
+        ri_portrait.loadBuddyAvatar(Loginactivity.accid);
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
         try{
