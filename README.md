@@ -15,10 +15,9 @@ UIkit:UIkit SDk from netease<br>
 - 优化头像功能（完成）
 - 优化pofile 页面（完成）
 - 优化服务器速度（完成）
-- map的线程handler
+- map的线程handler(SDK问题，无法结局)
 - 登出按钮（不必要）
 
+# 进度：95%
 
-修改：注释掉map里按钮功能
-      navigation里default 页面删除
        
