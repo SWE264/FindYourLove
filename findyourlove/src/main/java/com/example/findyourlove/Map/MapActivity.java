@@ -315,14 +315,14 @@ class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ItemViewHolder>{
         holder.gender.setText("Gender: "+ MapActivity.Demodata.get(position).getGender());
         holder.distance.setText("Distance: "+Double.toString(MapActivity.Demodata.get(position).getDistance())+" km");
         holder.name.setText("Name: "+ MapActivity.Demodata.get(position).getUserName());
-//        holder.button.setOnClickListener(a->{
-//            Intent intent = new Intent(mContext, PersonInfoActivity.class);
-//            Bundle bundle=new Bundle();
-//            bundle.putInt("accid", MapActivity.Demodata.get(position).accid);
-//            intent.putExtras(bundle);
-//            System.out.println("开始跳转");
-//            startActivity(mContext,intent,bundle);
-//        });
+        holder.button.setOnClickListener(a->{
+            Intent intent = new Intent(mContext, PersonInfoActivity.class);
+            Bundle bundle=new Bundle();
+            bundle.putInt("accid", MapActivity.Demodata.get(position).accid);
+            intent.putExtras(bundle);
+            System.out.println("开始跳转");
+            startActivity(mContext,intent,bundle);
+        });
     }
 
     @Override
@@ -338,7 +338,7 @@ class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ItemViewHolder>{
             super(itemView);
             distance=itemView.findViewById(R.id.Distance);
             gender=itemView.findViewById(R.id.Gender);
-            //chat button recover
+
             button=itemView.findViewById(R.id.chatButton);
             name = itemView.findViewById(R.id.name);
         }

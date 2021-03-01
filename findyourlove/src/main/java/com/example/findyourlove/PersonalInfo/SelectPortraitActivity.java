@@ -8,14 +8,31 @@ import android.view.View;
 import android.os.Bundle;
 import android.widget.Button;
 
+import com.example.findyourlove.ConnectDatabase;
 import com.example.findyourlove.MainActivity;
 import com.example.findyourlove.R;
+import com.example.findyourlove.UserSystem.Loginactivity;
 import com.netease.nim.uikit.common.ui.imageview.HeadImageView;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 public class SelectPortraitActivity extends AppCompatActivity {
     MainActivity mainActivity=new MainActivity();
+    private int id = Integer.parseInt(Loginactivity.accid);
+    public static Connection conn;
+
+    public static void Connect() throws ClassNotFoundException, SQLException {
+        Class.forName("com.mysql.jdbc.Driver");
+        System.out.println("connect to database");
+        conn = DriverManager.getConnection("jdbc:mysql://findyourlove.crdb40mgvgxt.us-west-2.rds.amazonaws.com:3306/dating","dating","877152223Zzp!");
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_portrait);
         HeadImageView portrait_1=findViewById(R.id.portrait_1);
@@ -50,42 +67,70 @@ public class SelectPortraitActivity extends AppCompatActivity {
 
     }
 
-    public void onClick(View v){
-
-        Intent intent = new Intent(this, MainActivity.class);
+    public void onClick(View v) {
+        try {
+            System.out.println("Click the first Avatar");
+        //Intent intent = new Intent(this, MainActivity.class);
         switch (v.getId()){
             //navigation跳转
             case R.id.portrait_1:
-                startActivity(intent);
-                finish();
+
+                    changeAvatar(1);
+                    finish();
                 break;
             case R.id.portrait_2:
-                startActivity(intent);
+                changeAvatar(2);
+                finish();
                 break;
             case R.id.portrait_3:
-                startActivity(intent);
+                changeAvatar(3);
+                finish();
                 break;
             case R.id.portrait_4:
-                startActivity(intent);
+                changeAvatar(4);
+                finish();
                 break;
             case R.id.portrait_5:
-                startActivity(intent);
+                changeAvatar(5);
+                finish();
                 break;
             case R.id.portrait_6:
-                startActivity(intent);
+                changeAvatar(6);
+                finish();
                 break;
             case R.id.portrait_7:
-                startActivity(intent);
+                changeAvatar(7);
+                finish();
                 break;
             case R.id.portrait_8:
-                startActivity(intent);
+                changeAvatar(8);
+                finish();
                 break;
             case R.id.portrait_9:
-                startActivity(intent);
+                changeAvatar(9);
+                finish();
                 break;
             default:
                 break;
         }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+    public void changeAvatar(int num) throws SQLException {
+        if(conn==null){
+            try {
+                Connect();
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        PreparedStatement preparedStatement=conn.prepareStatement("update user set avatar=? where accid=?");
+        preparedStatement.setInt(1,num);
+        preparedStatement.setInt(2,id);
+        preparedStatement.execute();
     }
 
 
