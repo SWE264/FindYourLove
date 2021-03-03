@@ -1,13 +1,14 @@
 # senior_project-
-findyourlove：senior project main project<br>
-UIkit:UIkit SDk from netease<br>
+findyourlove：SWE264 project
+
+UIkit:UIkit SDk from netease
 
 # Some hints!
 - Apache HTTP Server cannot be used in Andriod Studio
 - 
 
 
-# 优化建议：
+# TO-DO list
 - 合并user_db(Huang) 和ConnectDatabase(Zhang) （完成）
 - 测试zhangzhipeng文件夹内和文件夹外同名方法（完成）
 - 测试完成后删除zhangzhipeng文件夹（完成）
@@ -18,6 +19,6 @@ UIkit:UIkit SDk from netease<br>
 - map的线程handler(SDK问题，无法结局)
 - 登出按钮（不必要）
 
-# 进度：95%
+# Progress: 95%
 
-       
+​       
