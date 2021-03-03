@@ -25,7 +25,7 @@ public class DiscoverFragment extends Fragment {
         discoverViewModel =
                 ViewModelProviders.of(this).get(DiscoverViewModel.class);
         View root = inflater.inflate(R.layout.activity_findpeople, container, false);
-        Button peopleAroundYou=root.findViewById(R.id.peoplearoundyou);
+        Button peopleAroundYou = root.findViewById(R.id.peoplearoundyou);
         peopleAroundYou.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

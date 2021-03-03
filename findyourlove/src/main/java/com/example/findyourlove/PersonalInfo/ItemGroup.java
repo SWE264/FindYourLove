@@ -17,7 +17,7 @@ import androidx.annotation.Nullable;
 
 import com.example.findyourlove.R;
 
-public class ItemGroup extends FrameLayout{
+public class ItemGroup extends FrameLayout {
 
     private LinearLayout itemGroupLayout; //组合控件的布局
     private TextView titleTv; //标题
@@ -42,7 +42,7 @@ public class ItemGroup extends FrameLayout{
     public ItemGroup(@NonNull Context context, @Nullable AttributeSet attrs, @AttrRes int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         initView(context);
-        initAttrs(context,attrs);
+        initAttrs(context, attrs);
     }
 
     //初始化View
@@ -54,6 +54,7 @@ public class ItemGroup extends FrameLayout{
         jtRightIv = (ImageView) view.findViewById(R.id.jt_right_iv);
         addView(view); //把自定义的这个组合控件的布局加入到当前FramLayout
     }
+
     /**
      * 初始化相关属性，引入相关属性
      *
@@ -106,20 +107,20 @@ public class ItemGroup extends FrameLayout{
         jtRightIv.setVisibility(showJtIcon ? View.VISIBLE : View.GONE);  //设置向右的箭头图标是否可见
     }
 
-    public void editable(){
+    public void editable() {
         contentEdt.setEnabled(true);
     }
 
-    public String getText(){
+    public String getText() {
         System.out.println("当前text为" + contentEdt.getText().toString());
         return contentEdt.getText().toString();
     }
 
-    public void setText(String text){
+    public void setText(String text) {
         contentEdt.setText(text);
     }
 
-    public void invisible(){
+    public void invisible() {
         jtRightIv.setVisibility(View.INVISIBLE);
     }
 }
