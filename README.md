@@ -63,16 +63,22 @@ Match function: Python
 
 
 # TO-DO list
-- 合并user_db(Huang) 和ConnectDatabase(Zhang) （完成）
-- 测试zhangzhipeng文件夹内和文件夹外同名方法（完成）
-- 测试完成后删除zhangzhipeng文件夹（完成）
-- 优化sql速度（profile page， login page）（完成）
-- 优化头像功能（完成）
-- 优化pofile 页面（完成）
-- 优化服务器速度（完成）
-- map的线程handler(SDK问题，无法结局)
-- 登出按钮（不必要）
+- Merge user_db and ConnectDatabase (done)
+- Test same-name methods (done)
+- Delete same-name sub-folder (done)
+- Optimize sql speed（profile page， login page）(done)
+- Optimize avatar (done)
+- Optimize the page of profile (done)
+- Optimize the speed of server (done)
+- map's thread handler (SDK's problem)
+- Logout button
 
-# Progress: 95%
+# Reference
 
-​       
+Sun Yu (https://github.com/duke326)
+
+Lai Wang (https://github.com/LaiWang2020)
+
+Xinyi Hu (https://github.com/samaritanhu)
+
+Chupeng Zhang (https://github.com/chupengrocky/)
