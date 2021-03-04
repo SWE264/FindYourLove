@@ -176,15 +176,15 @@ public class MapActivity extends Activity implements AMapLocationListener {
     public void onLocationChanged(AMapLocation amapLocation) {
 
         System.out.println("location " + accid);
-        System.out.println("hhhhhhhhhhhhhhhhh");
+//        System.out.println("hhhhhhhhhhhhhhhhh");
         if (amapLocation != null) {
             if (amapLocation.getErrorCode() == 0) {
-                //定位成功回调信息，设置相关消息
+                //get callback
                 currentLocation = amapLocation;
-                amapLocation.getLocationType();//获取当前定位结果来源，如网络定位结果，详见定位类型表
-                amapLocation.getLatitude();//获取纬度
-                amapLocation.getLongitude();//获取经度
-                amapLocation.getAccuracy();//获取精度信息
+                amapLocation.getLocationType();//getLocationType
+                amapLocation.getLatitude();//getLatitude
+                amapLocation.getLongitude();//getLongitude
+                amapLocation.getAccuracy();//getAccuracy
                 System.out.println(amapLocation.getLocationType() + "la" + amapLocation.getLatitude() + "lo" + amapLocation.getLongitude());
                 SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                 Date date = new Date(amapLocation.getTime());
