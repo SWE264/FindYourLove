@@ -6,6 +6,9 @@ import android.os.StrictMode;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
 import java.sql.SQLException;
 
 import com.example.findyourlove.ConnectDatabase;
@@ -13,6 +16,7 @@ import com.example.findyourlove.UserSystem.Loginactivity;
 import com.example.findyourlove.MainActivity;
 import com.example.findyourlove.R;
 import com.netease.nim.uikit.api.NimUIKit;
+import com.netease.nim.uikit.common.ui.imageview.HeadImageView;
 
 
 import android.widget.Button;
@@ -20,10 +24,14 @@ import android.widget.Button;
 
 public class PersonInfoActivity extends AppCompatActivity {
     private ItemGroup ig_id,ig_name,ig_gender,ig_region,ig_brithday;
-
+    public HeadImageView ri_portrait;
     private int id = Integer.parseInt(Loginactivity.accid);
-
-
+    public static Connection conn;
+    public static void Connect() throws ClassNotFoundException, SQLException {
+        Class.forName("com.mysql.jdbc.Driver");
+        System.out.println("connect to database");
+        conn = DriverManager.getConnection("jdbc:mysql://findyourlove.crdb40mgvgxt.us-west-2.rds.amazonaws.com:3306/dating","dating","877152223Zzp!");
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +46,10 @@ public class PersonInfoActivity extends AppCompatActivity {
         ig_gender = (ItemGroup)findViewById(R.id.ig_gender);
         ig_region = (ItemGroup)findViewById(R.id.ig_region);
         ig_brithday = (ItemGroup)findViewById(R.id.ig_brithday);
+        ri_portrait=(HeadImageView)findViewById(R.id.ri_portrait);
+
+        ri_portrait.loadBuddyAvatar(String.valueOf(id));
+
 
         Button chatbutton=findViewById(R.id.Chat);
         chatbutton.setOnClickListener(new View.OnClickListener() {

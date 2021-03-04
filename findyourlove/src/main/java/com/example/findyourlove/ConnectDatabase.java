@@ -156,6 +156,18 @@ public class ConnectDatabase {
         }
         return s;
     }
+    public static String getAvatar(int id) throws SQLException, ClassNotFoundException {
+        if(conn==null)
+            ConnectDatabase.Connect();
+        String s = null;
+        PreparedStatement preparedStatement=conn.prepareStatement("SELECT avatar FROM dating.user WHERE accid = ?;");
+        preparedStatement.setInt(1,id);
+        ResultSet resultSet = preparedStatement.executeQuery();
+        while (resultSet.next()) {
+            s = resultSet.getString(1);
+        }
+        return s;
+    }
 
     public static String getBirth2(int id) throws SQLException, ClassNotFoundException {
         if(conn==null)

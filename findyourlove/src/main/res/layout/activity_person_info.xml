@@ -16,7 +16,7 @@
         android:paddingTop="30dp"
         android:paddingBottom="10dp">
 
-        <com.example.findyourlove.PersonalInfo.RoundImageView
+        <com.netease.nim.uikit.common.ui.imageview.HeadImageView
             android:id="@+id/ri_portrait"
             android:layout_width="60dp"
             android:layout_height="60dp"
