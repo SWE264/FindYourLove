@@ -48,7 +48,7 @@ public class PersonInfoActivity extends AppCompatActivity {
         ig_brithday = (ItemGroup)findViewById(R.id.ig_brithday);
         ri_portrait=(HeadImageView)findViewById(R.id.ri_portrait);
 
-        ri_portrait.loadBuddyAvatar(String.valueOf(id));
+
 
 
         Button chatbutton=findViewById(R.id.Chat);
@@ -83,6 +83,7 @@ public class PersonInfoActivity extends AppCompatActivity {
         }catch (Exception e){
             e.printStackTrace();
         }
+
     }
 
     Thread Initial_Thread =new Thread(new Runnable() {
@@ -95,6 +96,7 @@ public class PersonInfoActivity extends AppCompatActivity {
                 ig_brithday.getContentEdit().setText(ConnectDatabase.getBirth2(id));
                 ig_gender.getContentEdit().setText(ConnectDatabase.getGender2(id));
                 ig_region.getContentEdit().setText(ConnectDatabase.getRegion2(id));
+                ri_portrait.loadBuddyAvatar(String.valueOf(id));
             } catch (SQLException e) {
                 e.printStackTrace();
             } catch (ClassNotFoundException e) {
